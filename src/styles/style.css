@@ -3252,12 +3252,17 @@ select.form-track__input {
 .radio-options {
   border: 1px solid #d3d3d3;
   max-width: 500px;
-  overflow-x: scroll;
-  flex-direction: row !important;
+  /* flex-direction: row !important; */
 }
 .radio-options .radio-options-inputs {
   height: 30px;
-  width: 150px;
+  /* width: 150px; */
   padding: 1rem;
   margin: 1rem;
+}
+.radio-options label {
+  margin-left: 2rem;
+}
+.radio-options .radio-options-inputs-file {
+  height: initial;
 }
