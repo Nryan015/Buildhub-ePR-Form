@@ -3266,3 +3266,32 @@ select.form-track__input {
 .radio-options .radio-options-inputs-file {
   height: initial;
 }
+
+/* style.css */
+.addButton {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.addButton:hover {
+  background-color: #007000;
+}
+
+.removeButton {
+  background-color: #9d0001;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.removeButton:hover {
+  background-color: #6e0001;
+}

@@ -5,6 +5,7 @@ import Attachment from "./attachment";
 import EstimatedCostInput from "./estimated-cost-input";
 import SetTotalCostInput from "./set-total-cost-input";
 
+
 function RadioOptions(props) {
   const { onTotalEstimatedCostChange } = props;
 
@@ -70,7 +71,7 @@ function RadioOptions(props) {
         />
         <Attachment labelText="Attachment" />
         {index !== 0 && (
-          <button type="button" onClick={() => handleRemove(index)}>
+          <button type="button" onClick={() => handleRemove(index)} className="removeButton">
             Remove
           </button>
         )}
@@ -81,7 +82,7 @@ function RadioOptions(props) {
   return (
     <div className="radio-options">
       {renderSets()}
-      <button type="button" onClick={handleAddMore}>
+      <button type="button" onClick={handleAddMore} className="addButton">
         Add More
       </button>
       <div className="radio-options-set">
