@@ -1,8 +1,6 @@
 import "../styles/style.css";
 import BuildHubLogo from "../images/buildhub-logo.png";
-import CurrentLocation from "./header-components/current-location";
-import FormSearch from "./header-components/form-search";
-import NavBar from "./header-components/navbar";
+
 
 function Header2nd() {
   return (
