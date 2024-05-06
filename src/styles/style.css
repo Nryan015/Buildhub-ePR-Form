@@ -2597,13 +2597,18 @@ body {
 .applicant_canvas {
   border: 1px solid black;
   width: 100%;
-  min-height: 30rem;
+  height: 300px; /* Adjust the height as needed */
+  min-height: 10rem; /* Set a minimum height to prevent the canvas from collapsing */
 }
+
 @media only screen and (max-width: 25em) {
   .applicant_canvas {
     font-size: 50%;
+    height: 200px; /* Adjust the height for smaller screens */
+    min-height: 6rem; /* Set a minimum height for smaller screens */
   }
 }
+
 
 .clearCanvas {
   text-decoration: underline;
@@ -3295,3 +3300,41 @@ select.form-track__input {
 .removeButton:hover {
   background-color: #6e0001;
 }
+
+.form-track__label {
+  margin-bottom: 0.5rem; /* Add some bottom margin to separate the label from the checkboxes */
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: row; /* Align checkboxes horizontally */
+}
+
+.checkbox-wrapper {
+  margin-right: 1rem; /* Add some right margin to create space between checkboxes */
+}
+
+.form-track__checkbox {
+  margin-right: 0.5rem; /* Add some right margin to separate the checkbox from the label */
+  appearance: none; /* Hide the default appearance of the checkbox */
+  width: 1.2rem; /* Set a fixed width for the custom checkbox */
+  height: 1.2rem; /* Set a fixed height for the custom checkbox */
+  border: 1px solid #555; /* Add a border to the custom checkbox */
+  border-radius: 3px; /* Add some border radius for rounded corners */
+  cursor: pointer; /* Change cursor to pointer when hovering over the checkbox */
+}
+
+.form-track__checkbox:checked {
+  background-color: #6e0001; /* Change background color when checkbox is checked */
+  border-color: #6e0001; /* Change border color when checkbox is checked */
+}
+
+.form-track__checkbox:focus {
+  outline: none; /* Remove outline on focus */
+  box-shadow: 0 0 0 3px rgb(0, 0, 0); /* Add a box shadow on focus */
+}
+
+.checkbox-wrapper label {
+  cursor: pointer; /* Change cursor to pointer when hovering over the label */
+}
+

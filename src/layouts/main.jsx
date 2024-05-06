@@ -1,4 +1,3 @@
-// Main.jsx
 import React, { Component } from "react";
 import "../styles/style.css";
 import DateInput from "../components/date-input";
