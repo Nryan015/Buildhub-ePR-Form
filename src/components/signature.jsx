@@ -6,7 +6,7 @@ const Signature = ({ labelText }) => {
   const signatureRef = useRef();
 
   const handleClear = (event) => {
-    event.preventDefault(); // Prevent default form submission behavior
+    event.preventDefault(); 
     signatureRef.current.clear();
   };
 
